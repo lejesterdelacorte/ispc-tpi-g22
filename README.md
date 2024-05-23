@@ -1,12 +1,7 @@
 **Introducción a la Programación**:
 
-- En archivo **README.md**
-    
-    - Detallar los datos de los integrantes del grupo: Nombre, Apellido, DNI, Correo Electrónico y link (url) de la cuenta personal de github.
-    
-    - Descripción de la propuesta de proyecto elegida.
 - Análisis y Diseño del proyecto (pseudocódigo). _**Solo de lo que será el menú principal, la primer interacción que tendra el usuario que haga uso de la aplicación.**_
-- Dentro de un repositorio personal (no del grupal), en una carpeta **solucionesPracticas** dejar las soluciones en pseudocódigo y python de los **ejercicios propuestos en las presentaciones y/o de las propuestas en el aula**, en la sección de los contenidos (cada estructura de control, secuencial, condicional e iterativa tiene su apartado de actividades, sumado a la sección de estructuras de datos listas, tuplas y diccionarios). _Aquí es importante al menos disponer de algunas soluciones realizadas en pseint y python, no necesariamente deben tener todos los ejercicios._
+- Dentro de un repositorio personal (no del grupal), en una carpeta **solucionesPracticas** dejar las soluciones en pseudocódigo y python de los **ejercicios propuestos en las presentaciones y/o de las propuestas en el aula**, en la sección de los contenidos (cada estructura de control, secuencial, condicional e iterativa tiene su apartado de actividades, sumado a la sección de estructuras de datos listas, tuplas y diccionarios). _Aquí es importante al menos disponer de algunas soluciones realizadas  en python, no necesariamente deben tener todos los ejercicios._
 
 **Base de Datos I**: 
 
@@ -44,12 +39,15 @@ Basándose en los requerimientos funcionales del proyecto y aplicando la legisla
 	- **Nombre:** Albors, Ezequiel.
 	- **DNI:** 38501932
 	- **Email:** ezequielalbors@gmail.com
-	- **GitHub**: 
+	- **GitHub**:  https://github.com/eze3221
 5. Integrante 4:
 	- **Nombre:** Asef, Nicolás.
-	- **DNI:** 
-	- **Email:** 
-	- **GitHub**: 
+	- **DNI:** 39070521
+	- **Email:** nicolasasef1@gmail.com
+	- **GitHub**: https://github.com/nicolas-asef
 ### Proyecto Elegido: Sharing Books.
 #### Descripción:
-	
+La aplicación que desarrollaremos en el presente proyecto permite a dos usuarios intercambiar libros, fomentando la creación de una comunidad de lectores promoviendo la interacción social y el intercambio cultural a través de la literatura.
+El intercambio se hará en una ubicación específica, donde los usuarios se pongan de acuerdo para encontrarse. Se perimitirá intercambio de uno a uno, y se llevará registro de ese intercambio a través de ua hora y fecha. 
+De los usuarios, tendremos registros sobre sus datos personales, incluyendo nombre y apellido, direccion, numero de contacto y un correo electrónico.
+De los libros 
