@@ -25,5 +25,4 @@
 #### Descripción:
 La aplicación que desarrollaremos en el presente proyecto permite a dos usuarios intercambiar libros, fomentando la creación de una comunidad de lectores promoviendo la interacción social y el intercambio cultural a través de la literatura.
 El intercambio se hará en una ubicación específica, donde los usuarios se pongan de acuerdo para encontrarse. Se perimitirá intercambio de uno a uno, y se llevará registro de ese intercambio a través de ua hora y fecha. 
-De los usuarios, tendremos registros sobre sus datos personales, incluyendo nombre y apellido, direccion, numero de contacto y un correo electrónico.
-De los libros 
+
