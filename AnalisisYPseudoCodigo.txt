@@ -18,17 +18,17 @@ Datos:
         - nombre_usuario: string.
         - password: string.
 2. b. Resultado: Logueo exitoso. Datos de usuario (usuario).
-    3. a. Una vez almacenados sus datos, se le pregunta que libros quiere intercambiar 
+3. a. Una vez almacenados sus datos, se le pregunta que libros quiere intercambiar 
     y que libros dispone para dar:
         - librosPropios: lista de libros.
         - librosBuscados: lista de libros.
 3. b. Resultado:
-    3. c. Listamos usuarios con los libros que matchean.
+3. c. Listamos usuarios con los libros que matchean.
         - usuarios: lista de usuarios.
         - libros: lista de libros.
-    3. d. Listamos libros propios.
+3. d. Listamos libros propios.
         - libros: lista de libros.
-    3. e. Lista de usuarios tipo contactos.
+3. e. Lista de usuarios tipo contactos.
         - usuarios: lista de usuarios.
     - intercambios: lista de intercambios.
 Subproblemas:
@@ -45,7 +45,7 @@ Subproblemas:
 
 
 Comienzo registroUsuario:
-    1. Escribir "Bienvenidos a Sharing Books!!!!"
+    1. Escribir "Bienvenidos a Sharing Books!!"
     2. Escribir "Ingrese sus datos:".
     3. leer nombre.
     4. leer apellido
