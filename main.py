@@ -18,7 +18,7 @@ def main():
         print("10. Actualizar Usuario")
         print("11. Actualizar Contacto")
         print("12. Actualizar Libro")
-        print("13. Salir")
+        print("13. Salir del Menu")
 
         choice = input("Selecciona una opción: ")
 
