@@ -1,2 +1,2 @@
 def deleteUser():
-    print("Eliminacion de Usuario")
+    print("Eliminar Usuario")
