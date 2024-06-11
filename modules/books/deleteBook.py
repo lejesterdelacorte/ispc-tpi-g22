@@ -1,2 +1,2 @@
 def deleteBook():
-    print("Eliminacion de libros")
+    print("Eliminar libro")

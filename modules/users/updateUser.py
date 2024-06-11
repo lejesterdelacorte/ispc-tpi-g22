@@ -1,2 +1,2 @@
 def updateUser():
-    print("Modificacion de Usuario")
+    print("Modificar Usuario")

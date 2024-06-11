@@ -1,2 +1,2 @@
 def createUser():
-    print("Creacion de Usuario")
+    print("Crear Usuario")

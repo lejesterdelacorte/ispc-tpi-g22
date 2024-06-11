@@ -1,2 +1,2 @@
-def getContacts():
+def getMeetingPoint(meetingId):
     print("Obtener Punto de Encuentro")

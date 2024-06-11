@@ -1,2 +1,2 @@
 def getBooks():
-    print("Consulta de libros")
+    print("Obtener libros")

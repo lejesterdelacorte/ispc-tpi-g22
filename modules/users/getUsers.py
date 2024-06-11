@@ -1,2 +1,2 @@
 def getUsers():
-    print("Consulta de Usuario")
+    print("Obtener Usuario")
