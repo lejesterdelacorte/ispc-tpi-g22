@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `Sharing_Books`.`punto_encuentro` (
   PRIMARY KEY (`ID_punto_encuentro`),
   UNIQUE INDEX `ID_punto_encuentro_UNIQUE` (`ID_punto_encuentro` ASC) VISIBLE,
   INDEX `ID_domicilio_idx` (`ID_domicilio` ASC) VISIBLE,
-  CONSTRAINT `ID_domicilio`
+  CONSTRAINT `ID_domicilio_p_e`
     FOREIGN KEY (`ID_domicilio`)
     REFERENCES `Sharing_Books`.`domicilio` (`ID_domicilio`)
     ON DELETE NO ACTION
@@ -108,26 +108,37 @@ CREATE TABLE IF NOT EXISTS `Sharing_Books`.`Intercambio` (
   `ID_libro2` INT NULL,
   `ID_punto_encuentro` INT NULL,
   PRIMARY KEY (`ID_intercambio`),
-  INDEX `ID_usuario_idx` (`ID_usuario1` ASC, `ID_usuario2` ASC) VISIBLE,
-  INDEX `ID_libro_idx` (`ID_libro1` ASC, `ID_libro2` ASC) VISIBLE,
+  INDEX `ID_usuario1_idx` (`ID_usuario1` ASC) VISIBLE,
+  INDEX `ID_usuario2_idx` (`ID_usuario2` ASC) VISIBLE,
+  INDEX `ID_libro1_idx` (`ID_libro1` ASC) VISIBLE,
+  INDEX `ID_libro2_idx` (`ID_libro2` ASC) VISIBLE,
   INDEX `ID_punto_encuentro_idx` (`ID_punto_encuentro` ASC) VISIBLE,
-  CONSTRAINT `ID_usuario`
-    FOREIGN KEY (`ID_usuario1` , `ID_usuario2`)
-    REFERENCES `Sharing_Books`.`usuario` (`ID_usuario` , `ID_usuario`)
+  CONSTRAINT `FK_usuario1`
+    FOREIGN KEY (`ID_usuario1`)
+    REFERENCES `Sharing_Books`.`usuario` (`ID_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `ID_libro`
-    FOREIGN KEY (`ID_libro1` , `ID_libro2`)
-    REFERENCES `Sharing_Books`.`libro` (`ID_libro` , `ID_libro`)
+  CONSTRAINT `FK_usuario2`
+    FOREIGN KEY (`ID_usuario2`)
+    REFERENCES `Sharing_Books`.`usuario` (`ID_usuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `ID_punto_encuentro`
+  CONSTRAINT `FK_libro1`
+    FOREIGN KEY (`ID_libro1`)
+    REFERENCES `Sharing_Books`.`libro` (`ID_libro`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_libro2`
+    FOREIGN KEY (`ID_libro2`)
+    REFERENCES `Sharing_Books`.`libro` (`ID_libro`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_punto_encuentro`
     FOREIGN KEY (`ID_punto_encuentro`)
     REFERENCES `Sharing_Books`.`punto_encuentro` (`ID_punto_encuentro`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

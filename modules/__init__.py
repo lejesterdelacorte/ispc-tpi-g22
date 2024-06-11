@@ -15,3 +15,9 @@ from .users.createUser import createUser
 from .users.deleteUser import deleteUser
 from .users.getUsers import getUsers
 from .users.updateUser import updateUser
+
+# Import desde Address
+from .address.createAddress import createAddress
+from .address.deleteAddress import deleteAddress
+from .address.getAddresses import getAddresses
+from .address.updateAddress import updateAddress
