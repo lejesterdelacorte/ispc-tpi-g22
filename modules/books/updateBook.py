@@ -1,6 +1,7 @@
 from ..utils.dBConnection import DatabaseConnection
 
 def updateBook():
+    print("--------MODIFICACION DE LIBRO EXISTENTE-------") 
     ID_libro = input("Ingrese el ID del libro a modificar: ")
     titulo = input("Ingrese el título del libro: ")
     autor = input("Ingrese el autor del libro: ")
@@ -15,3 +16,4 @@ def updateBook():
     values = (titulo, autor, editorial, fecha_publicacion, genero, ID_usuario, ID_libro)
     cursor.execute(sql, values)
     connection.commit()
+    print("--------EL LIBRO SE MODIFICÓ CON ÉXITO-------") 

@@ -1,6 +1,7 @@
 from ..utils.dBConnection import DatabaseConnection
 
 def createBook():
+    print("----------CREAR UN NUEVO LIBRO----------") 
     titulo = input("Ingrese el título del libro: ")
     autor = input("Ingrese el autor del libro: ")
     editorial = input("Ingrese la editorial del libro: ")
@@ -14,3 +15,4 @@ def createBook():
     values = (titulo, autor, editorial, fecha_publicacion, genero, ID_usuario)
     cursor.execute(sql, values)
     connection.commit()
+    print("--------EL LIBRO SE CREÓ CON ÉXITO-------") 
