@@ -7,11 +7,11 @@ def updateBook():
     editorial = input("Ingrese la editorial del libro: ")
     fecha_publicacion =	input("Ingrese la fecha en la que fue publicado el libro: ")
     genero = input("Ingrese el género al que pertenece el libro: ")
-    usuario_id_usuario = input("Ingrese el id de usuario al que pertenece el libro: ")	
+    ID_usuario = input("Ingrese el id de usuario al que pertenece el libro: ")	
     db_instance = DatabaseConnection()
     connection = db_instance.get_connection()
     cursor = connection.cursor()
-    sql = "UPDATE libro SET titulo=%s, autor=%s, editorial=%s, fecha_publicacion=%s, genero=%s, usuario_id_usuario=%s WHERE ID_libro = %s;"
-    values = (titulo, autor, editorial, fecha_publicacion, genero, usuario_id_usuario, ID_libro)
+    sql = "UPDATE libro SET titulo=%s, autor=%s, editorial=%s, fecha_publicacion=%s, genero=%s, ID_usuario=%s WHERE ID_libro = %s;"
+    values = (titulo, autor, editorial, fecha_publicacion, genero, ID_usuario, ID_libro)
     cursor.execute(sql, values)
     connection.commit()
