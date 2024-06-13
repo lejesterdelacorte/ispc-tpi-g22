@@ -23,7 +23,10 @@ def main():
         choice = input("Selecciona una opción: ")
 
         if choice == '1':
-            createUser()
+            if createUser():
+                print("------------------------------------------")
+                print("-----Se creó el usuario correctamente-----")
+                print("------------------------------------------")
         elif choice == '2':
             createContact()
         elif choice == '3':
