@@ -21,3 +21,9 @@ from .address.createAddress import createAddress
 from .address.deleteAddress import deleteAddress
 from .address.getAddresses import getAddresses
 from .address.updateAddress import updateAddress
+
+# Import desde MeetingPoint
+from .meeting.createMeetingPoint import createMeetingPoint
+from .meeting.deleteMeetingPoint import deleteMeetingPoint
+from .meeting.getMeetingPoint import getMeetingPoints
+from .meeting.updateMeetingPoint import updateMeetingPoint
