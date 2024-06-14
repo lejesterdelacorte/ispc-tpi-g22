@@ -25,3 +25,7 @@ from .meeting.createMeetingPoint import createMeetingPoint
 from .meeting.deleteMeetingPoint import deleteMeetingPoint
 from .meeting.getMeetingPoint import getMeetingPoints
 from .meeting.updateMeetingPoint import updateMeetingPoint
+
+# Import desde Trade
+from .trade.createTrade import createTrade
+from .trade.getTrade import getTrade

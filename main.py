@@ -1,7 +1,7 @@
 from modules import (createBook, createUser, createContact, 
                      deleteBook, deleteContact, deleteUser, 
                      getContacts, getBooks, getUsers,
-                     updateBook, updateContact, updateUser, createMeetingPoint, getMeetingPoints, updateMeetingPoint)
+                     updateBook, updateContact, updateUser, createMeetingPoint, getMeetingPoints, updateMeetingPoint, createTrade, getTrade)
 
 def main():
     while True:
@@ -21,7 +21,9 @@ def main():
         print('13. Crear Punto de Encuentro')
         print('14. Obtener Punto de Encuentro')
         print('15. Actualizar Punto de Encuentro')
-        print('16. Salir del Menu')
+        print('16. Crear Intercambio')
+        print('17. Obtener Intercambio')
+        print('18. Salir del Menu')
 
         choice = input("Selecciona una opción: ")
 
@@ -59,6 +61,10 @@ def main():
         elif choice == '15':
             updateMeetingPoint()
         elif choice == '16':
+            createTrade()
+        elif choice == '17':
+            getTrade()
+        elif choice == '18':
             print("Saliendo del programa...")
             break
         else:
