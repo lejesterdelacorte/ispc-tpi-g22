@@ -81,3 +81,6 @@ Con estos comandos ya podremos ejecutarlo.
 Para utilizar la aplicación, ejecutar desde main.py
 Se desplegara en consola un menu numerico.
 Elegir las opciones que uno quiera utilizar a medida que avanza por el proceso.
+
+### Video explicativo.
+(Link a video explicativo)[https://drive.google.com/drive/folders/1FE77-q1FpW7OWkRFU6TjcHdSM6jAMjs_?usp=drive_link]
