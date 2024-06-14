@@ -1,7 +1,7 @@
 from modules import (createBook, createUser, createContact, 
                      deleteBook, deleteContact, deleteUser, 
                      getContacts, getBooks, getUsers,
-                     updateBook, updateContact, updateUser)
+                     updateBook, updateContact, updateUser, createMeetingPoint, getMeetingPoints, updateMeetingPoint, createTrade, getTrade)
 
 def main():
     while True:
@@ -18,12 +18,20 @@ def main():
         print('10. Actualizar Usuario')
         print('11. Actualizar Contacto')
         print('12. Actualizar Libro')
-        print('13. Salir del Menu')
+        print('13. Crear Punto de Encuentro')
+        print('14. Obtener Punto de Encuentro')
+        print('15. Actualizar Punto de Encuentro')
+        print('16. Crear Intercambio')
+        print('17. Obtener Intercambio')
+        print('18. Salir del Menu')
 
         choice = input("Selecciona una opción: ")
 
         if choice == '1':
-            createUser()
+            if createUser():
+                print("------------------------------------------")
+                print("-----Se creó el usuario correctamente-----")
+                print("------------------------------------------")
         elif choice == '2':
             createContact()
         elif choice == '3':
@@ -35,7 +43,7 @@ def main():
         elif choice == '6':
             deleteBook()
         elif choice == '7':
-            print(getUsers())
+            getUsers()
         elif choice == '8':
             print(getContacts())
         elif choice == '9':
@@ -47,6 +55,16 @@ def main():
         elif choice == '12':
             updateBook()
         elif choice == '13':
+            createMeetingPoint()
+        elif choice == '14':
+            getMeetingPoints()
+        elif choice == '15':
+            updateMeetingPoint()
+        elif choice == '16':
+            createTrade()
+        elif choice == '17':
+            getTrade()
+        elif choice == '18':
             print("Saliendo del programa...")
             break
         else:
