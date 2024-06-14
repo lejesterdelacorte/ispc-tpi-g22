@@ -83,4 +83,4 @@ Se desplegara en consola un menu numerico.
 Elegir las opciones que uno quiera utilizar a medida que avanza por el proceso.
 
 ### Video explicativo.
-[Link a video explicativo](https://drive.google.com/drive/folders/1FE77-q1FpW7OWkRFU6TjcHdSM6jAMjs_?usp=drive_link)
+[Link a video explicativo](https://youtu.be/Tu3mvh2ON3Y_?usp=drive_link)
