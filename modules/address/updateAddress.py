@@ -12,7 +12,6 @@ def updateAddress(address_id):
             city = input("Ingrese la Ciudad: ")
             country = input("Ingrese el País: ")
             
-            
             update_query = 'UPDATE domicilio SET '
             params = []
             

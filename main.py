@@ -41,7 +41,7 @@ def main():
         elif choice == '6':
             deleteBook()
         elif choice == '7':
-            print(getUsers())
+            getUsers()
         elif choice == '8':
             print(getContacts())
         elif choice == '9':
